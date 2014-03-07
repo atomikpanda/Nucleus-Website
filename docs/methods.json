@@ -1,0 +1,21 @@
+[
+{"method":"- (void)hook:(SEL)selector inClass:(NSString *)classname fromClass:(NSString *)tweakclassname",
+"parameters":{
+"(SEL)hook:":"The selector you want to hook.",
+"(NSString *)inClass:":"The name of the class you are hooking.",
+"(NSString *)fromClass:":"The name of the class that your new method is in."
+}
+},
+{"method":"- (void)addMethod:(SEL)method fromClass:(Class)fromClass intoClass:(Class)newClass",
+"parameters":{
+"(SEL)addMethod:":"The selector you want to hook.",
+"(Class)fromClass:":"The class that the new method is in.",
+"(Class)intoClass:":"The class you are adding the method into."
+}
+},
+{"method":"- (Class)classForString:(NSString *)classname",
+"parameters":{
+"(NSString *)classForString:":"The name of the class that you want to get."
+}, "message":"classForString runs objc_getClass to access the class in Objective-C runtime."
+}
+]
